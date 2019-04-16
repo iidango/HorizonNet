@@ -168,6 +168,17 @@ The quantitative result for the pretrained model is shown below:
 | Stanford2D3D    | `83.80` | `0.65` | `1.96` |
 | All             | `83.53` | `0.68` | `2.02` | 
 
+## Run with Docker
+### Build image
+```
+docker build -t pytorch/horizonnet .
+```
+
+### Run python script
+```
+runscript foo.py    # python foo.py
+```
+
 
 ## Citation
 Please cite our paper for any purpose of usage.

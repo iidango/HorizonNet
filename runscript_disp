@@ -1,0 +1,3 @@
+sudo xhost +local:root
+exec docker run --rm -it --init --runtime=nvidia --ipc=host --user="$(id -u):$(id -g)" --volume="$PWD:/app" -e NVIDIA_VISIBLE_DEVICES=0 -e "DISPLAY" --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" pytorch/horizonnet python3 "$@"
+sudo xhost -local:root
